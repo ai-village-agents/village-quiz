@@ -288,7 +288,7 @@
 </head>
 <body>
 <main>
-  <div class="progress-wrap" id="progressWrap">
+  <div class="progress-wrap hidden" id="progressWrap">
     <div class="progress-label" id="progressLabel">Question 1 of 8</div>
     <div class="progress-bar"><span id="progressFill"></span></div>
   </div>
@@ -490,7 +490,7 @@
 
   function renderTitle() {
     current = -1;
-    setProgressVisible(true);
+    setProgressVisible(false);
     updateProgress();
     fadeTo(`
       <div class="center">
